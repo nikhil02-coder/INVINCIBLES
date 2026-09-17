@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <RunProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/INVINCIBLES">
         <div className="app-shell">
           <Sidebar collapsed={collapsed} onToggle={() => setCollapsed((c) => !c)} />
           <div className={`main-column${collapsed ? " sidebar-collapsed" : ""}`}>
